@@ -96,13 +96,12 @@ foodeat/
 
 ## 📸 Screens
 
-| Home | Menu | Cart |
+| UPI | Menu | BYPASSS |
 | :--: | :--: | :--: |
-| Doodle hero, categories, trending dishes | Search + filter by category | Live totals, free delivery over $25 |
-
+| just 2 hand bypass no token bakchodi direct psss
 ---
 
-## 🧑‍🎨 About the Author
+## 🧑‍🎨 About the MASTER( GW)
 
 <div align="center">
 
@@ -124,13 +123,13 @@ foodeat/
 
 ## 📜 License
 
-MIT © [@glitterwine](https://instagram.com/glitterwine)
+MIT © [NO NEED NIGGGASSS](https://instagram.com/glitterwine)
 
 ---
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=44&duration=2500&pause=500&color=FF6A3D,F5C518,7CFC00,00BFFF,C77DFF&multiline=true&center=true&vCenter=true&width=760&height=140&lines=MADE+BY+%40GLITTERWINE;%40FOODEAT+%E2%80%94+GET+THE+BEST" alt="MADE BY @GLITTERWINE — @FOODEAT GET THE BEST" />
+<img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=44&duration=2500&pause=500&color=FF6A3D,F5C518,7CFC00,00BFFF,C77DFF&multiline=true&center=true&vCenter=true&width=760&height=140&lines=MADE+BY+%40GLITTERWINE;%40FOODEAT+%E2%80%94+GET+THE+BEST" alt="MADE BY xteam @GLITTERWINE — @UPIMODULE GET THE BEST" />
 
 <br />
 
