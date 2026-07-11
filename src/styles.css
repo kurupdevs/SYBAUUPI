@@ -31,43 +31,47 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-tomato: var(--tomato);
-  --color-mustard: var(--mustard);
-  --color-lime: var(--lime);
-  --color-sky: var(--sky);
+  --color-mango: var(--mango);
+  --color-mint: var(--mint);
+  --color-berry: var(--berry);
   --color-grape: var(--grape);
+  --color-sky: var(--sky);
   --color-cream: var(--cream);
+  --color-ink: var(--ink);
   --font-display: "Bagel Fat One", cursive;
   --font-body: "Fredoka", sans-serif;
 }
 
 :root {
   --radius: 1rem;
-  --cream: oklch(0.97 0.04 90);
-  --tomato: oklch(0.68 0.22 25);
-  --mustard: oklch(0.83 0.17 85);
-  --lime: oklch(0.83 0.22 135);
-  --sky: oklch(0.78 0.14 220);
+  --ink: oklch(0.16 0.03 300);
+  --cream: oklch(0.96 0.05 95);
+  --tomato: oklch(0.7 0.22 25);
+  --mango: oklch(0.85 0.18 75);
+  --mint: oklch(0.88 0.12 155);
+  --berry: oklch(0.7 0.24 350);
   --grape: oklch(0.62 0.22 300);
+  --sky: oklch(0.82 0.13 220);
 
   --background: var(--cream);
-  --foreground: oklch(0.15 0.02 40);
+  --foreground: var(--ink);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.02 40);
+  --card-foreground: var(--ink);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 40);
-  --primary: var(--tomato);
+  --popover-foreground: var(--ink);
+  --primary: var(--berry);
   --primary-foreground: oklch(1 0 0);
-  --secondary: var(--mustard);
-  --secondary-foreground: oklch(0.15 0.02 40);
-  --muted: oklch(0.94 0.02 80);
-  --muted-foreground: oklch(0.4 0.02 40);
-  --accent: var(--lime);
-  --accent-foreground: oklch(0.15 0.02 40);
+  --secondary: var(--mango);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.94 0.02 90);
+  --muted-foreground: oklch(0.4 0.02 300);
+  --accent: var(--mint);
+  --accent-foreground: var(--ink);
   --destructive: oklch(0.58 0.24 27);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.15 0.02 40);
-  --input: oklch(0.15 0.02 40);
-  --ring: var(--tomato);
+  --border: var(--ink);
+  --input: var(--ink);
+  --ring: var(--berry);
 }
 
 @layer base {
@@ -78,38 +82,82 @@
     font-family: var(--font-body);
     font-weight: 500;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.5px; }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.5px; line-height: 0.95; }
 }
 
 /* 3D doodle utilities */
 @utility doodle-border { border: 3px solid var(--color-foreground); }
-@utility shadow-doodle {
-  box-shadow: 6px 6px 0 0 var(--color-foreground);
-}
-@utility shadow-doodle-lg {
-  box-shadow: 10px 10px 0 0 var(--color-foreground);
-}
-@utility shadow-doodle-sm {
-  box-shadow: 3px 3px 0 0 var(--color-foreground);
-}
+@utility doodle-border-thick { border: 4px solid var(--color-foreground); }
+@utility shadow-doodle { box-shadow: 6px 6px 0 0 var(--color-foreground); }
+@utility shadow-doodle-lg { box-shadow: 10px 10px 0 0 var(--color-foreground); }
+@utility shadow-doodle-xl { box-shadow: 14px 14px 0 0 var(--color-foreground); }
+@utility shadow-doodle-sm { box-shadow: 3px 3px 0 0 var(--color-foreground); }
+@utility shadow-doodle-berry { box-shadow: 8px 8px 0 0 var(--berry); }
+@utility shadow-doodle-mint { box-shadow: 8px 8px 0 0 var(--mint); }
+@utility shadow-doodle-mango { box-shadow: 8px 8px 0 0 var(--mango); }
 @utility press {
   transition: transform 120ms ease, box-shadow 120ms ease;
   &:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 0 var(--color-foreground); }
   &:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 0 var(--color-foreground); }
 }
 
-@keyframes float-y { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-12px) rotate(2deg); } }
+/* text 3D shadow (colored) */
+@utility text-3d-berry {
+  color: var(--cream);
+  text-shadow:
+    2px 2px 0 var(--ink),
+    4px 4px 0 var(--berry),
+    6px 6px 0 var(--ink);
+}
+@utility text-3d-mint {
+  color: var(--ink);
+  text-shadow:
+    2px 2px 0 var(--mint),
+    4px 4px 0 var(--ink);
+}
+
+/* washi tape decoration */
+@utility tape {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px; left: 24px;
+    width: 90px; height: 24px;
+    background: var(--mango);
+    border: 3px solid var(--ink);
+    transform: rotate(-6deg);
+    background-image: repeating-linear-gradient(45deg, transparent 0 6px, oklch(0 0 0 / 0.1) 6px 8px);
+  }
+}
+
+@keyframes float-y { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-14px) rotate(3deg); } }
 @keyframes spin-slow { to { transform: rotate(360deg); } }
-@keyframes wobble { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
-@keyframes pop-in { 0% { transform: scale(0.6); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes wobble { 0%,100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes pop-in { 0% { transform: scale(0.6) rotate(-6deg); opacity: 0; } 100% { transform: scale(1) rotate(0); opacity: 1; } }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes rainbow { 0%,100% { color: var(--berry);} 25%{color: var(--tomato);} 50%{color: var(--grape);} 75%{color: var(--mint);} }
 
 @utility animate-float { animation: float-y 5s ease-in-out infinite; }
-@utility animate-spin-slow { animation: spin-slow 18s linear infinite; }
+@utility animate-spin-slow { animation: spin-slow 22s linear infinite; }
 @utility animate-wobble { animation: wobble 3s ease-in-out infinite; }
-@utility animate-pop-in { animation: pop-in 0.35s cubic-bezier(.34,1.56,.64,1) both; }
+@utility animate-pop-in { animation: pop-in 0.4s cubic-bezier(.34,1.56,.64,1) both; }
+@utility animate-marquee { animation: marquee 30s linear infinite; }
+@utility animate-bob { animation: bob 2.4s ease-in-out infinite; }
+@utility animate-rainbow { animation: rainbow 4s linear infinite; }
 
-/* dotted paper background */
+/* backgrounds */
 @utility bg-dots {
-  background-image: radial-gradient(oklch(0.15 0.02 40 / 0.12) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(oklch(0.16 0.03 300 / 0.12) 1.5px, transparent 1.5px);
   background-size: 22px 22px;
+}
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, oklch(0.16 0.03 300 / 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.16 0.03 300 / 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@utility bg-stripes-mango {
+  background: repeating-linear-gradient(45deg, var(--mango) 0 18px, var(--cream) 18px 36px);
 }
