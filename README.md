@@ -7,8 +7,7 @@
 <br />
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=34&pause=800&color=FF6A3D&center=true&vCenter=true&width=520&lines=%F0%9F%8D%94+Burgers;%F0%9F%8D%95+Pizza;%F0%9F%8D%A3+Sushi;%F0%9F%8D%A9+Desserts;%F0%9F%A5%A4+Drinks;Delivered+in+~25+minutes." alt="Typing" />
-</a>
+  <img src="[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1A5975&width=435&lines=AADHAR+X+UPI+BYPASSER+;GET+THE+BEST)](https://git.io/typing-svg)
 
 </div>
 
