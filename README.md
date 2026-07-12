@@ -4,7 +4,7 @@
 
 <!-- Animated 3D COLORFUL title -->
 <a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=64&pause=800&color=FF3B7F&center=true&vCenter=true&multiline=true&width=900&height=180&lines=%F0%9F%8D%94+FoodEat;Doodle-Fast+Delivery+App" alt="FoodEat" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=64&pause=800&color=FF3B7F&center=true&vCenter=true&multiline=true&width=900&height=180&lines=%F0%9F%8D%94+UPIMODULE;Doodle-Fast+BYPASS+MODULE" alt="UPIBYPASSER XD" />
 </a>
 
 <br />
@@ -39,22 +39,21 @@
 
 ---
 
-## 🍔 About FoodEat
+## 🍔 About @GLITTERWINE UPI BYPASSER 
 
-FoodEat is a fresh, playful food ordering app built with a bold **3D doodle** aesthetic — chunky borders, offset shadows, hand-drawn vibes. Order burgers, pizza, sushi, sides, desserts and drinks from local kitchens. Free delivery on orders over **$25**.
+xteam coder private upi BYPASSER used to bypass UPI Bank and application with 10 good token time without any issue you can bypass any UPI bank application and no need to root your phone**.
 
-- 🚀 ~25 min delivery ETA
-- 🧑‍🍳 15,000+ partner kitchens
+-3 MINUTE TOKEN TIME
+- 🧑‍🍳 GET THE BEST
 - ⭐ 4.9 average rating
-- 🌱 Vegetarian, spicy and popular filters
-
+- 🌱 private safe & secure 
 ---
 
 ## ✨ Features
 
 | | |
 |---|---|
-| 🍽 **Full menu** | 18+ curated dishes across 6 categories |
+| 🍽 **Full TUTOR** | 18+ curated dishes across 6 categories |
 | 🔎 **Search & filter** | Filter by category, search by name |
 | 🛒 **Persistent cart** | localStorage cart survives refresh |
 | 💳 **Checkout flow** | Card / Cash / UPI with order confirmation |
