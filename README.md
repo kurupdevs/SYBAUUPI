@@ -133,7 +133,7 @@ Custom design tokens in `src/styles.css`:
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=120&section=footer&text=%40FOODEAT%20GET%20THE%20BEST&fontSize=36&fontColor=fff&animation=fadeIn&fontAlignY=70" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=120&section=footer&text=%40UPIMODULE%20GET%20THE%20BEST&fontSize=36&fontColor=fff&animation=fadeIn&fontAlignY=70" width="100%" alt="footer" />
 
 **Made with 🧡 by [@glitterwine](https://instagram.com/glitterwine)**
 
