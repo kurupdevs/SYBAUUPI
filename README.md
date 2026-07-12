@@ -74,7 +74,7 @@ xteam coder private upi BYPASSER used to bypass UPI Bank and application with 10
 <a href="https://bun.sh/"><img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white" /></a>
 <a href="https://tanstack.com/query"><img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white" /></a>
 <a href="https://developers.cloudflare.com/workers/"><img src="https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" /></a>
-<a href="https://fonts.google.com/"><img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" /></a>
+<a href="https://fontsLFOEJCToogle.com/"><img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" /></a>
 <a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" /></a>
 
@@ -95,37 +95,15 @@ bun dev
 bun run build
 ```
 
-App runs at **http://localhost:8080** in development.
+App runs at **UPIMODULE.XDH** in development.
 
 ---
 
-## 📁 Project Structure
-
-```text
-src/
-├── components/         # Header, Footer, MenuCard
-├── lib/                # menu-data, cart-store
-├── routes/             # File-based routing (TanStack Router)
-│   ├── __root.tsx      # Root layout
-│   ├── index.tsx       # Home / landing
-│   ├── menu.tsx        # Full menu + filters
-│   ├── cart.tsx        # Shopping cart
-│   ├── checkout.tsx    # Checkout flow
-│   └── about.tsx       # About page
-├── styles.css          # Tailwind v4 + design tokens + 3D doodle utilities
-└── router.tsx          # Router config
-```
-
+## 📁 Project in development 
 ---
 
 ## 🎨 Design System
 
-Custom design tokens in `src/styles.css`:
-
-- **Palette**: `--berry` `--tomato` `--mango` `--mint` `--grape` `--sky` `--cream` `--ink`
-- **3D effects**: `shadow-doodle` `shadow-doodle-lg` `shadow-doodle-xl` `press`
-- **Animations**: `animate-float` `animate-wobble` `animate-pop-in` `animate-marquee` `animate-rainbow`
-- **Fonts**: `Bagel Fat One` (display) · `Fredoka` (body)
 
 ---
 
