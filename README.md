@@ -20,7 +20,7 @@
 <br />
 
 <!-- Rainbow marquee tagline -->
-<img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=30&duration=2500&pause=500&color=A855F7&center=true&vCenter=true&width=760&lines=%40FOODEAT+GET+THE+BEST+%F0%9F%8D%B4;Fresh+Kitchens+%C2%B7+Fair+Riders+%C2%B7+Real+Food;Order+in+Seconds%2C+Delivered+Doodle-Fast" alt="tagline" />
+<img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=30&duration=2500&pause=500&color=A855F7&center=true&vCenter=true&width=760&lines=%40FOODEAT+GET+THE+BEST+%F0%9F%8D%B4;UPI+AADHARXD+%C2%B7+Fair+Riders+%C2%B7+EASY+SIMPLE; CLEAR+in+Seconds%2C+TOKEN TIME FAST" alt="tagline" />
 
 <br /><br />
 
