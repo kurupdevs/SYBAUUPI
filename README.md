@@ -4,7 +4,7 @@
 
 <!-- Animated 3D COLORFUL title -->
 <a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=64&pause=800&color=FF3B7F&center=true&vCenter=true&multiline=true&width=900&height=180&lines=%F0%9F%8D%94+UPIMODULE;glitterwine-Fast+BYPASS+MODULE" alt="UPIBYPASSER XD" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bagel+Fat+One&size=64&pause=800&color=FF3B7F&center=true&vCenter=true&multiline=true&width=900&height=180&lines=%F0%9F%8D%94+UPIMODULE;gliterwine-Fast+BYPAS+MODULE" alt="UPIBYPASSER XD" />
 </a>
 
 <br />
