@@ -53,14 +53,12 @@ xteam coder private upi BYPASSER used to bypass UPI Bank and application with 10
 
 | | |
 |---|---|
-| 🍽 **Full TUTOR** | 18+ curated dishes across 6 categories |
-| 🔎 **Search & filter** | Filter by category, search by name |
-| 🛒 **Persistent cart** | localStorage cart survives refresh |
-| 💳 **Checkout flow** | Card / Cash / UPI with order confirmation |
+| 🍽 **Full TUTOR** | EASY INSTALLATION GUIDE PROVIDED |
+| 🔎 **CD & filter** |  | coming soon
+| 🛒 **Persistent cart** | INSTANTLY AND FAST |
+| **Checkout flow** | Card / Cash / UPI ALL BYPASS ONE TIME |
 | 📱 **Fully responsive** | Mobile-first, works on any device |
-| 🎨 **3D doodle UI** | Chunky borders, offset shadows, animated stickers |
-| ⚡ **SSR + type-safe routing** | TanStack Start + Router |
-
+| 
 ---
 
 ## 🧰 Tools & Stack
