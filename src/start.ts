@@ -1,22 +1,11 @@
-import { createStart, createMiddleware } from "@tanstack/react-start";
+import { createRouter } from "@tanstack/react-router"
+import { routeTree } from "./routeTree.gen"
+import { createApp } from "vinxi"
 
-import { renderErrorPage } from "./lib/error-page";
+export const router = createRouter({ routeTree })
 
-const errorMiddleware = createMiddleware().server(async ({ next }) => {
-  try {
-    return await next();
-  } catch (error) {
-    if (error != null && typeof error === "object" && "statusCode" in error) {
-      throw error;
-    }
-    console.error(error);
-    return new Response(renderErrorPage(), {
-      status: 500,
-      headers: { "content-type": "text/html; charset=utf-8" },
-    });
-  }
-});
+declare module "@tanstack/react-router" {
+  interface Register { router: typeof router }
+}
 
-export const startInstance = createStart(() => ({
-  requestMiddleware: [errorMiddleware],
-}));
+createApp({ router }).start()
