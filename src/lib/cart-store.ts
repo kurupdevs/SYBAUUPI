@@ -1,6 +1,6 @@
 import { create } from "zustand"
 
-export interface CartItem { id: string; name: string; price: number; quantity: number }
+interface CartItem { id: string; name: string; price: number; quantity: number }
 
 interface CartStore {
  items: CartItem[]
@@ -13,14 +13,12 @@ interface CartStore {
 
 export const useCartStore = create<CartStore>((set, get) => ({
  items: [],
- addItem: (item) => set((state) => {
-  const existing = state.items.find((i) => i.id === item.id)
-  if (existing) {
-   return { items: state.items.map((i) => i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i) }
-  }
-  return { items: [...state.items, { ...item, quantity: 1 }] }
+ addItem: (item) => set((s) => {
+  const ex = s.items.find((i) => i.id === item.id)
+  if (ex) return { items: s.items.map((i) => i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i) }
+  return { items: [...s.items, { ...item, quantity: 1 }] }
  }),
- removeItem: (id) => set((state) => ({ items: state.items.filter((i) => i.id !== id) })),
+ removeItem: (id) => set((s) => ({ items: s.items.filter((i) => i.id !== id) })),
  clearCart: () => set({ items: [] }),
  totalItems: () => get().items.reduce((sum, i) => sum + i.quantity, 0),
  totalPrice: () => get().items.reduce((sum, i) => sum + i.price * i.quantity, 0),
