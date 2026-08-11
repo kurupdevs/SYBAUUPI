@@ -21,4 +21,3 @@ bun run build
 - TanStack Router
 - Tailwind CSS
 - Bun
-
