@@ -1,6 +1,6 @@
 # SYBAUUPI
 
-A modern web application.
+A modern web application built with React and TypeScript.
 
 ## Setup
 
@@ -21,3 +21,4 @@ bun run build
 - TanStack Router
 - Tailwind CSS
 - Bun
+
