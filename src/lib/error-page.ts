@@ -1,17 +1,27 @@
-import { captureError } from "./error-capture"
+/**
+ * Error page utility.
+ *
+ * Generates error-page data consumed by the router's error boundary
+ * to display user-friendly error messages.
+ */
 
-export function reportError(error: Error | string): void {
-  captureError(error)
-  if (typeof window !== "undefined") {
-    console.error("[ErrorPage]", error)
-  }
+/** Props passed to the default error component. */
+export interface ErrorPageData {
+  title: string
+  message: string
 }
 
-export function createErrorDisplay(error: Error): string {
-  return `
-    <div style="padding:2rem;text-align:center;">
-      <h2>Something went wrong</h2>
-      <p>${error.message}</p>
-    </div>
-  `
+/**
+ * Build error page data from an error.
+ *
+ * @param error - The caught error or error-like object.
+ * @returns Structured data for the error page.
+ */
+export function getErrorPageData(error: unknown): ErrorPageData {
+  const message =
+    error instanceof Error ? error.message : "An unexpected error occurred."
+  return {
+    title: "Something went wrong",
+    message,
+  }
 }

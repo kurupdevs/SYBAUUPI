@@ -1,36 +1,20 @@
-type LovableErrorOptions = {
-  mechanism?: "manual" | "onerror" | "unhandledrejection" | "react_error_boundary";
-  handled?: boolean;
-  severity?: "error" | "warning" | "info";
-};
+/**
+ * Error reporting integration.
+ *
+ * Hook and utility for reporting client-side errors to
+ * external monitoring services.
+ */
 
-type LovableEvents = {
-  captureException?: (
-    error: unknown,
-    context?: Record<string, unknown>,
-    options?: LovableErrorOptions,
-  ) => void;
-};
-
-declare global {
-  interface Window {
-    __lovableEvents?: LovableEvents;
-  }
-}
-
-export function reportLovableError(error: unknown, context: Record<string, unknown> = {}) {
-  if (typeof window === "undefined") return;
-  window.__lovableEvents?.captureException?.(
-    error,
-    {
-      source: "react_error_boundary",
-      route: window.location.pathname,
-      ...context,
-    },
-    {
-      mechanism: "react_error_boundary",
-      handled: false,
-      severity: "error",
-    },
-  );
+/**
+ * Report an error to the configured error-reporting backend.
+ *
+ * Currently logs to console; extend to send to Sentry,
+ * LogRocket, or similar services.
+ *
+ * @param error - The error to report.
+ * @param context - Optional context like the current route.
+ */
+export function reportError(error: Error, context?: string): void {
+  console.error(`[SYBAUUPI] ${context ?? "app"}:`, error.message)
+  // Future: POST to error-reporting API
 }
