@@ -1,1 +1,26 @@
-{"name":"sybauupi","version":"1.0.0","private":true,"scripts":{"dev":"vinxi dev","build":"vinxi build","start":"vinxi start"}}
+{
+ "name":"sybauupi",
+ "version":"1.0.0",
+ "private":true,
+ "type":"module",
+ "scripts":{
+  "dev":"vinxi dev",
+  "build":"vinxi build",
+  "start":"vinxi start"
+ },
+ "dependencies":{
+  "@tanstack/react-router":"latest",
+  "react":"^19.0.0",
+  "react-dom":"^19.0.0",
+  "tailwind-merge":"latest",
+  "clsx":"latest",
+  "zustand":"latest"
+ },
+ "devDependencies":{
+  "@types/react":"latest",
+  "@types/react-dom":"latest",
+  "typescript":"latest",
+  "vinxi":"latest",
+  "tailwindcss":"latest"
+ }
+}
