@@ -3,11 +3,22 @@ import { Button } from "../components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
 
+/**
+ * HomePage — landing page with hero section and feature cards.
+ *
+ * Displays a hero banner with CTA buttons (View Menu, Learn More),
+ * followed by a 3-column grid of feature highlights.
+ *
+ * @returns The home page React element.
+ */
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-12">
+      {/* Hero Section */}
       <section className="py-12 md:py-24 text-center">
-        <Badge className="mb-4" variant="secondary">New & Improved</Badge>
+        <Badge className="mb-4" variant="secondary">
+          New & Improved
+        </Badge>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
           SYBAUUPI
         </h1>
@@ -20,15 +31,18 @@ export default function HomePage() {
             <Button size="lg">View Menu</Button>
           </Link>
           <Link to="/about">
-            <Button size="lg" variant="outline">Learn More</Button>
+            <Button size="lg" variant="outline">
+              Learn More
+            </Button>
           </Link>
         </div>
       </section>
 
+      {/* Feature Cards */}
       <section className="grid md:grid-cols-3 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>🍕 Fresh Ingredients</CardTitle>
+            <CardTitle>🍎 Fresh Ingredients</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
