@@ -1,12 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 
-/**
- * AboutPage — about us page with company info.
- *
- * Displays the restaurant's story and mission in a card layout.
- *
- * @returns The about page React element.
- */
 export default function AboutPage() {
   return (
     <div className="py-8 max-w-2xl">

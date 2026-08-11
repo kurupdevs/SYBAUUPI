@@ -2,15 +2,6 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
-/**
- * Card — container component for grouping related content.
- *
- * @example
- * <Card>
- *   <CardHeader><CardTitle>Title</CardTitle></CardHeader>
- *   <CardContent>Content here</CardContent>
- * </Card>
- */
 const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
